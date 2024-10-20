@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Model Marketplace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   
+
+    <section id="account">
+      <p>Connected Account: <span id="accountAddress">Not connected</span></p>
+    </section>
+
+    <h1>Compute Taylor Series for Sin(x)</h1>
+    
+    <div>
+        <label for="terms">Enter number of terms:</label>
+        <input type="number" id="terms" placeholder="e.g. 10">
+    </div>
+    
+    <div>
+        <label for="xValue">Enter x value:</label>
+        <input type="number" id="xValue" placeholder="e.g. 1">
+    </div>
+    
+    <button onclick="calculateTaylorSin()">Calculate Sin(x)</button>
+    <button onclick="calculateTaylorCos()">Calculate Cos(x)</button>
+    <button onclick="calculateTaylorTan()">Calculate Tan(x)</button>
+    <button onclick="calculateTaylorCot()">Calculate Cot(x)</button>
+    <h2>Result: <span id="result"></span></h2>
+    <!-- Include Web3.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
